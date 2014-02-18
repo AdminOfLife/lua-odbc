@@ -1,0 +1,52 @@
+type = "x86"
+arch = "Windows"
+author = "Alexey Melnichuk"
+depends = {
+[[lua >= 5.1]],
+}
+
+desc = "ODBC library for Lua"
+version = "0.2.1"
+maintainer = "Alexey Melnichuk"
+files = {
+Runtime = {
+[[lib\lua\odbc\core.dll]],
+[[lib\lua\odbc.lua]],
+[[lib\lua\odbc\luasql.lua]],
+[[lib\lua\odbc\dba.lua]],
+[[lib\lua\odbc\dba\utils.lua]],
+[[lib\lua\odbc\proxy.lua]],
+}
+,
+Data = {
+[[share\lua-odbc\README.md]],
+[[share\lua-odbc\LICENCE.txt]],
+}
+,
+Test = {
+[[share\lua-odbc\test\\00_test_odbc.lua]],
+[[share\lua-odbc\test\\01_test_odbc_env.lua]],
+[[share\lua-odbc\test\\02_test_odbc_cnn.lua]],
+[[share\lua-odbc\test\\03_test_odbc_cnn_info.lua]],
+[[share\lua-odbc\test\\04_test_odbc_bind.lua]],
+[[share\lua-odbc\test\\05_test_odbc_foreach.lua]],
+[[share\lua-odbc\test\\06_test_odbc_more.lua]],
+[[share\lua-odbc\test\\07_test_odbc_val.lua]],
+[[share\lua-odbc\test\\08_test_odbc_stmt.lua]],
+[[share\lua-odbc\test\\09_test_odbc_cnn_handle.lua]],
+[[share\lua-odbc\test\\config.lua]],
+[[share\lua-odbc\test\\dba\.luacov]],
+[[share\lua-odbc\test\\dba\test.lua]],
+[[share\lua-odbc\test\\luasql\odbc.lua]],
+[[share\lua-odbc\test\\luasql\test-luasql.lua]],
+[[share\lua-odbc\test\\mytest.odbc.ini]],
+[[share\lua-odbc\test\\perf_test.lua]],
+[[share\lua-odbc\test\\test.lua]],
+[[share\lua-odbc\test\\tools.lua]],
+}
+,
+}
+
+license = "MIT/X11"
+name = "lua-odbc"
+url = "https://github.com/moteus/lua-odbc"
