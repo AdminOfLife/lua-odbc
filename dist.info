@@ -1,4 +1,4 @@
-name = "odbc"
+name = "lua-odbc"
 version = "0.2.1"
 
 desc = "ODBC library for Lua"
